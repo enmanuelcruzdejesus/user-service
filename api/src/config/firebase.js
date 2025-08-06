@@ -21,4 +21,6 @@ if (!firebase.apps.length) {
 }
 
 const db = firebase.database();
-module.exports = db;
+const usersRef = db.ref('users'); 
+
+module.exports = { db, usersRef };
